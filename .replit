@@ -1,0 +1,13 @@
+run = "python3 bot.py"
+modules = ["python-3.11"]
+
+[env]
+PYTHONUNBUFFERED = "1"
+FLASK_ENV = "production"
+
+[nix]
+channel = "stable-23.11"
+
+[[ports]]
+localPort = 5000
+externalPort = 80
